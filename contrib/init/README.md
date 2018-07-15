@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: pivxd.service
-Upstart: pivxd.conf
-OpenRC:  pivxd.openrc
-         pivxd.openrcconf
-CentOS:  pivxd.init
+SystemD: nextond.service
+Upstart: nextond.conf
+OpenRC:  nextond.openrc
+         nextond.openrcconf
+CentOS:  nextond.init
 
 have been made available to assist packagers in creating node packages here.
 

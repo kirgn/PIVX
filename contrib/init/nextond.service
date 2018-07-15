@@ -1,0 +1,26 @@
+[Unit]
+Description=NextON's distributed currency daemon
+After=network.target
+
+[Service]
+User=nexton
+Group=nexton
+
+Type=forking
+PIDFile=/var/lib/nextond/nextond.pid
+
+ExecStart=/usr/bin/nextond -daemon -pid=/var/lib/nextond/nextond.pid \
+          -conf=/etc/nexton/nexton.conf -datadir=/var/lib/nextond
+
+ExecStop=-/usr/bin/nexton-cli -conf=/etc/nexton/nexton.conf \
+         -datadir=/var/lib/nextond stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

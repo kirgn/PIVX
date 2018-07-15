@@ -1,9 +1,9 @@
-// Copyright (c) 2017-2018 The PIVX developers
+// Copyright (c) 2017-2018 The NextON developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PIVX_MINTPOOL_H
-#define PIVX_MINTPOOL_H
+#ifndef NEXTON_MINTPOOL_H
+#define NEXTON_MINTPOOL_H
 
 #include <map>
 #include <list>
@@ -50,4 +50,4 @@ public:
 };
 
 
-#endif //PIVX_MINTPOOL_H
+#endif // NEXTON_MINTPOOL_H

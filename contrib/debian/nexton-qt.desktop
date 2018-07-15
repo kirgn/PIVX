@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=NextON
+Comment=NextON P2P Cryptocurrency
+Comment[fr]=NextON, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=NextON, eşten eşe kriptografik sanal para birimi
+Exec=nexton-qt %u
+Terminal=false
+Type=Application
+Icon=nexton128
+MimeType=x-scheme-handler/nxton;
+Categories=Office;Finance;
